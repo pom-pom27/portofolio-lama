@@ -1,0 +1,31 @@
+.toggle {
+  width: 50px;
+  height: 25px;
+  position: fixed;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  border-radius: 50px;
+  display: flex;
+  border: 1px solid darkgrey;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.toggle-icon {
+  width: 15px;
+  height: 15px;
+  user-select: none;
+}
+
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  cursor: pointer;
+  background-color: grey;
+  left: 0;
+}

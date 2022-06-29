@@ -1,4 +1,4 @@
-import { projects } from "../../data";
+import { projects } from "../../util/data";
 import Project from "../Project/Project";
 import "./project-list.scss";
 interface ProjectListProps {}
@@ -13,13 +13,13 @@ const ProjectList: React.FC<ProjectListProps> = () => {
         culpa assumenda? Quod vero unde obcaecati saepe hic fugiat!
       </p>
       <div className="pl-list">
-        {projects.map((project) => (
+        {projects.slice(0, 6).map((project) => (
           <Project key={project.id} img={project.img} link={project.link} />
         ))}
       </div>
       {projects.length > 6 && (
-        <a href="">
-          <h2>Load More...</h2>
+        <a href="" className="project-load-more">
+          <h2>Load More ➜</h2>
         </a>
       )}
     </div>

@@ -96,6 +96,7 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
+  user-select: none;
 }
 .intro-img-bg {
   clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);

@@ -1,11 +1,14 @@
 import Address from "../../../img/address.png";
 import Email from "../../../img/email.png";
 import Phone from "../../../img/phone.png";
+import { useThemeContext } from "../../util/useThemeContext";
 import "./contact.scss";
 
 interface ContactProps {}
 
 const Contact: React.FC<ContactProps> = () => {
+  const { isDarkMode } = useThemeContext();
+
   return (
     <div className="contact">
       <div className="green-bg"></div>
@@ -35,24 +38,40 @@ const Contact: React.FC<ContactProps> = () => {
           </p>
           <form action="#" className="contact-form">
             <input
+              style={{
+                backgroundColor: isDarkMode ? "#333" : undefined,
+                color: isDarkMode ? "#fff" : undefined,
+              }}
               type="text"
               name="name"
               placeholder="Name"
               className="contact-input"
             />
             <input
+              style={{
+                backgroundColor: isDarkMode ? "#333" : undefined,
+                color: isDarkMode ? "#fff" : undefined,
+              }}
               type="text"
               name="subject"
               placeholder="Subject"
               className="contact-input"
             />
             <input
+              style={{
+                backgroundColor: isDarkMode ? "#333" : undefined,
+                color: isDarkMode ? "#fff" : undefined,
+              }}
               type="text"
               name="email"
               placeholder="Email"
               className="contact-input"
             />
             <textarea
+              style={{
+                backgroundColor: isDarkMode ? "#333" : undefined,
+                color: isDarkMode ? "#fff" : undefined,
+              }}
               rows={5}
               name="message"
               placeholder="Message"

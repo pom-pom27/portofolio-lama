@@ -29,4 +29,9 @@ export const projects = [
     img: "../img/project.png",
     link: "http://google.com",
   },
+  {
+    id: 7,
+    img: "../img/project.png",
+    link: "http://google.com",
+  },
 ];

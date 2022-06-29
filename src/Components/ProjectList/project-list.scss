@@ -17,5 +17,16 @@
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-evenly;
+  justify-content: center;
+}
+.project-load-more {
+  margin: 10px;
+
+  // color: black;
+
+  &:visited {
+    color: inherit;
+  }
+
+  text-decoration: none;
 }
