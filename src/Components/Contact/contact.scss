@@ -4,8 +4,8 @@
   position: relative;
 }
 .green-bg {
-  height: 100%;
   position: absolute;
+  height: 100%;
   width: 20px;
   background-color: #59b256;
 }
@@ -20,22 +20,21 @@
   flex: 1;
   flex-direction: column;
   margin-bottom: 30px;
-
-  .contact-title {
-    font-size: 100px;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  .contact-item {
-    display: flex;
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-  }
-  .contact-icon {
-    width: 40px;
-    margin-right: 20px;
-  }
+}
+.contact-title {
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contact-item {
+  display: flex;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.contact-icon {
+  width: 40px;
+  margin-right: 20px;
 }
 .contact-right {
   flex: 1;
@@ -43,41 +42,70 @@
   justify-content: center;
   flex-direction: column;
   margin-left: 20px;
+}
+.contact-bold {
+  font-weight: bold;
+}
+.form-title {
+  margin-bottom: 20px;
+}
 
-  .contact-bold {
-    font-weight: bold;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+.contact-input {
+  width: 50%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 50px;
+  font-size: 20px;
+  padding: 0 5px;
+}
+.button-submit {
+  width: 100px;
+  aspect-ratio: 2/1;
+  border: none;
+  background-color: #59b256;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ta {
+  width: 100%;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .contact-wrapper {
+    flex-direction: column;
+    // align-items: center;
+    padding: 0 50px;
+  }
+  .contact-left {
+    justify-content: end;
+  }
+  .contact-right {
+    flex: 1.5;
+    margin: 0;
+    justify-content: start;
+  }
+  .contact-title {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .contact-form {
+    justify-content: space-between;
+    width: 100%;
+    // border: 1px solid #000;
   }
   .form-title {
-    margin-bottom: 20px;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
+    display: none;
   }
   .contact-input {
-    width: 50%;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid black;
-    height: 50px;
-    font-size: 20px;
-    padding-left: 10px;
-  }
-  .button-submit {
-    width: 100px;
-    aspect-ratio: 2/1;
-    border: none;
-    background-color: #59b256;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .ta {
     width: 100%;
-    font-size: 20px;
-    padding-left: 10px;
-    margin-bottom: 20px;
   }
 }

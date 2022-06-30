@@ -24,7 +24,7 @@ const About: React.FC<AboutProps> = () => {
             It is a long established fact that a reader will be distracted by
             the readable content.
           </h2>
-          <p>
+          <p className="about-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure
             nisi quo perferendis ducimus, magnam voluptatibus quisquam adipisci,
             magni voluptates doloribus ratione, architecto eaque necessitatibus.

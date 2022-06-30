@@ -4,6 +4,7 @@
   position: relative;
   // background-color: darkgrey;
 }
+
 .intro-left {
   flex: 1;
   display: flex;
@@ -20,7 +21,7 @@
   display: flex;
   flex-direction: column;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .intro-greeting {
   font-size: 30px;
@@ -116,4 +117,32 @@
   left: 0;
   right: 0;
   z-index: 99;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+  .intro-left {
+    text-align: center;
+    flex: 1;
+  }
+  .intro-description {
+    display: none;
+  }
+  .intro-opening {
+    height: 60%;
+    padding: 0;
+  }
+  .intro-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-scroll {
+    display: none;
+  }
+
+  .intro-right {
+  }
 }

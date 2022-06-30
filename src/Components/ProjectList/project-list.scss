@@ -17,7 +17,7 @@
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .project-load-more {
   margin: 10px;
@@ -29,4 +29,27 @@
   }
 
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  .loadmore-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .pl-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pl-subtitle {
+    display: none;
+  }
+  .pl-title {
+    margin: 5px 0;
+  }
+  .project-load-more {
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+  }
 }
